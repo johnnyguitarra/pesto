@@ -1,0 +1,226 @@
+header {
+    background-color: rgb(69, 139, 76);
+    width: 100%;
+    padding-top: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=RocknRoll+One&family=Shippori+Antique+B1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#navv {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 139, 76);
+}
+
+#logonames {
+    height: 100px;
+    width: 100px;
+    margin-right: 400px;
+    margin-left: 50px;
+    contain: content;
+}
+
+#logonames img {
+    height: 100px;
+    width: auto;
+}
+
+#logoname {
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav a {
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(211, 255, 191);
+    padding-left: 1.5rem;
+}
+
+#bannersec {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    background-color: rgb(198, 255, 225);
+}
+
+#banner {
+    width: 100%;
+    height: auto; 
+}
+
+#sep1 {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: rgb(69, 139, 76);
+    width: 280px;
+    height: 280px;
+    margin: 20px 10px;
+    contain: content;
+}
+
+.container img {
+    width: 300px;
+    height: auto;
+}
+
+#copyr {
+    width: 100%;
+    position: relative;
+    float: left;
+    background-color: rgb(68, 107, 86);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#sep2 {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#sobretxt {
+    position: relative;
+    float: right;
+    height: 550px;
+    width: 550px;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 0 25px 25px 0;
+    background-color: rgb(203, 255, 211);
+}
+
+#sobretxt h6 {
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    text-justify: auto;
+    margin-left: 40px;
+    /* margin-bottom: 40px; */
+}
+
+#sobretxt p {
+    text-align: left;
+    text-justify: auto;
+    margin-left: 40px;
+}
+
+#cafeteriaa {
+    height: 500px;
+    width: 600px;
+    contain: content;
+}
+
+#cafeteriaa img {
+    width: 100%;
+    height: auto;
+}
+
+#Contato {
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: rgb(63, 119, 85);
+    padding: 15px;
+}
+
+#contatos,
+#Contato h2 {
+    text-align: center;
+}
+#main {
+    width: 1260px;
+    height: auto;
+    position: relative;
+    /* float: left; */
+    background-color: aliceblue;
+    margin: 0 auto;
+}
+
+/* Slideshow de Imagens */
+.slideshow {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: slideAnimation 9s infinite;
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s; /* primeira imagem aparece primeiro */
+}
+
+.slide:nth-child(2) {
+    animation-delay: 3s; /* segunda imagem aparece depois de 3 segundos */
+}
+
+.slide:nth-child(3) {
+    animation-delay: 6s; /* terceira imagem aparece depois de 6 segundos */
+}
+
+@keyframes slideAnimation {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+    }
+
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}
